@@ -1,0 +1,11 @@
+.done {
+    color: green;
+}
+
+.not-done {
+    color: red;
+}
+
+th, td {
+    padding: 15px;
+}

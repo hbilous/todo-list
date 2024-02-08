@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <h1 style="margin-top: 20px">Create tag:</h1>
+  <div style="width: 50%; margin-top: 20px">
+  <form action="{% url 'todo:tag-create' %}" method="post">
+  {% csrf_token %}
+    {{ form|crispy }}
+    <input class="btn btn-primary" type="submit" value="Create">
+  </form>
+  </div>
+{% endblock %}
